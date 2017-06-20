@@ -39,4 +39,8 @@ function myFunction() {
     // 1. First number
     // 2. Second number
     // 3. A function that performs an operation on them
+<<<<<<< HEAD
 // Return the value of the operation.
+=======
+// Return the value of the operation.
+>>>>>>> 80cf12b7ec038c1cf629ff603c427bcb81f0467d
