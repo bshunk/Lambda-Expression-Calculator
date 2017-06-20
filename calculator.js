@@ -1,10 +1,15 @@
 console.log("Ahoy, Captain!");
 
 
-document.getElementById("addBtn", "subBtn", "mulBtn", "divBtn").addEventListener("click", function(){
-    document.getElementById("firstNum", "secondNum").innerHTML = "Your result!";
-});
+// document.getElementById("addBtn", "subBtn", "mulBtn", "divBtn").addEventListener("click", function(){
+//     document.getElementById("firstNum", "secondNum").innerHTML = "Your result!";
+// });
 
+document.getElementById("addBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+};
 
 
 
@@ -15,9 +20,7 @@ document.getElementById("addBtn", "subBtn", "mulBtn", "divBtn").addEventListener
 
 
 // Create a function that multiplies two numbers passed in as arguments. Return the product.
-function addNumbers () {
 
-}
 
 
 // Create a function that adds two numbers passed in as arguments. Return the sum.
