@@ -2,19 +2,18 @@ console.log("Ahoy, Captain!");
 
 // Create a function that multiplies two numbers passed in as arguments. Return the product.
 
-
 // document.getElementById("add-color").addEventListener("click", function() {
 // 	piggie.classList.toggle("blue");
 // 	console.log(piggie, piggie.classList)
 // });
 
-var operations = (function(firstNum, secondNum) { 
+var mathOperations = (function(callback) { 
 
 	document.getElementById("mulBtn").addEventListener("click", function() {
-		let multiply = function (callback) {
+		let multiply = function (firstNum, secondNum) {
 			return firstNum * secondNum;
 			var product = firstNum * secondNum; 
-			console.log("product", event.target);
+			console.log(product);
 		}
 	});
 
@@ -22,7 +21,7 @@ var operations = (function(firstNum, secondNum) {
 
 	document.getElementById("addBtn").addEventListener("click", addition);
 
-	var addition = function (callback) {
+	var addition = function (firstNum, secondNum) {
 	    return firstNum + secondNum;
 	    console.log(addition);
 	};
@@ -31,7 +30,7 @@ var operations = (function(firstNum, secondNum) {
 
 	document.getElementById("subBtn").addEventListener("click", subtraction);
 
-	var subtraction = function (callback) {
+	var subtraction = function (firstNum, secondNum) {
 	    return firstNum - secondNum;
 	    console.log(subtraction);
 	};
@@ -40,12 +39,12 @@ var operations = (function(firstNum, secondNum) {
 
 	document.getElementById("divBtn").addEventListener("click", division);
 
-	var division = function (callback) {
+	var division = function (firstNum, secondNum) {
 	    return firstNum / secondNum;
 	    console.log(division);
 	};
 
-}(operations || {}));
+}(mathOperations || {}));
 
 // Create a function that accepts three arguments.
     // 1. First number
