@@ -1,39 +1,51 @@
 console.log("Ahoy, Captain!");
 
-
-// document.getElementById("addBtn", "subBtn", "mulBtn", "divBtn").addEventListener("click", function(){
-//     document.getElementById("firstNum", "secondNum").innerHTML = "Your result!";
-// });
-
-document.getElementById("addBtn").addEventListener("click", myFunction);
-
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-};
-
-
-
-
-
-
-
-
-
 // Create a function that multiplies two numbers passed in as arguments. Return the product.
 
 
+// document.getElementById("add-color").addEventListener("click", function() {
+// 	piggie.classList.toggle("blue");
+// 	console.log(piggie, piggie.classList)
+// });
 
-// Create a function that adds two numbers passed in as arguments. Return the sum.
+var operations = (function(firstNum, secondNum) { 
 
+	document.getElementById("mulBtn").addEventListener("click", function() {
+		let multiply = function (callback) {
+			return firstNum * secondNum;
+			var product = firstNum * secondNum; 
+			console.log("product", event.target);
+		}
+	});
 
+	// Create a function that adds two numbers passed in as arguments. Return the sum.
 
-// Create a function that subtracts two numbers passed in as arguments. Return the difference.
+	document.getElementById("addBtn").addEventListener("click", addition);
 
+	var addition = function (callback) {
+	    return firstNum + secondNum;
+	    console.log(addition);
+	};
 
+	// Create a function that subtracts two numbers passed in as arguments. Return the difference.
 
-// Create a function that divides two numbers passed in as arguments. Return the quotient.
+	document.getElementById("subBtn").addEventListener("click", subtraction);
 
+	var subtraction = function (callback) {
+	    return firstNum - secondNum;
+	    console.log(subtraction);
+	};
 
+	// Create a function that divides two numbers passed in as arguments. Return the quotient.
+
+	document.getElementById("divBtn").addEventListener("click", division);
+
+	var division = function (callback) {
+	    return firstNum / secondNum;
+	    console.log(division);
+	};
+
+}(operations || {}));
 
 // Create a function that accepts three arguments.
     // 1. First number
