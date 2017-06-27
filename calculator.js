@@ -2,13 +2,13 @@ console.log("Ahoy, Captain!");
 
 // Create a function that multiplies two numbers passed in as arguments. Return the product.
 
-document.getElementById("mulBtn").addEventListener("click", multiply);
 
 var multiply = function (firstNum, secondNum) {
-    return firstNum * secondNum;
+	document.getElementById("mulBtn").addEventListener("click", mulBtn);
+	return firstNum * secondNum;
+	var product = multiply("firstNum", "secondNum");
+	console.log("product", product)
 };
-var product = multiply("firstNum", "secondNum");
-document.write("Product= ", product)
 
 // Create a function that adds two numbers passed in as arguments. Return the sum.
 
